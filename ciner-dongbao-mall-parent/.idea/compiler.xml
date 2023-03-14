@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ciner-dongbao-cart" />
+        <module name="ciner-dongbao-cart-api" />
+        <module name="ciner-dongbao-cms" />
+        <module name="ciner-dongbao-cms-api" />
+        <module name="ciner-dongbao-common-base" />
+        <module name="ciner-dongbao-common-util" />
+        <module name="ciner-dongbao-dictionary" />
+        <module name="ciner-dongbao-dictionary-api" />
+        <module name="ciner-dongbao-generator" />
+        <module name="ciner-dongbao-manager-web" />
+        <module name="ciner-dongbao-oms" />
+        <module name="ciner-dongbao-oms-api" />
+        <module name="ciner-dongbao-pay" />
+        <module name="ciner-dongbao-pay-api" />
+        <module name="ciner-dongbao-pms" />
+        <module name="ciner-dongbao-pms-api" />
+        <module name="ciner-dongbao-portal-web" />
+        <module name="ciner-dongbao-sms" />
+        <module name="ciner-dongbao-sms-api" />
+        <module name="ciner-dongbao-ums" />
+        <module name="ciner-dongbao-ums-api" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

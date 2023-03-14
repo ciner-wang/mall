@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/ciner-dongbao-generator/pom.xml" />
+        <option value="$PROJECT_DIR$/ciner-dongbao-api/ciner-dongbao-ums-api/pom.xml" />
+        <option value="$PROJECT_DIR$/ciner-dongbao-service/ciner-dongbao-ums/pom.xml" />
+        <option value="$PROJECT_DIR$/ciner-dongbao-common/ciner-dongbao-common-util/pom.xml" />
+        <option value="$PROJECT_DIR$/ciner-dongbao-application/ciner-dongbao-portal-web/pom.xml" />
+        <option value="$PROJECT_DIR$/ciner-dongbao-service/ciner-dongbao-cart/pom.xml" />
+        <option value="$PROJECT_DIR$/ciner-dongbao-service/ciner-dongbao-cms/pom.xml" />
+        <option value="$PROJECT_DIR$/ciner-dongbao-service/ciner-dongbao-dictionary/pom.xml" />
+        <option value="$PROJECT_DIR$/ciner-dongbao-service/ciner-dongbao-oms/pom.xml" />
+        <option value="$PROJECT_DIR$/ciner-dongbao-service/ciner-dongbao-pay/pom.xml" />
+        <option value="$PROJECT_DIR$/ciner-dongbao-service/ciner-dongbao-pms/pom.xml" />
+        <option value="$PROJECT_DIR$/ciner-dongbao-service/ciner-dongbao-sms/pom.xml" />
+        <option value="$PROJECT_DIR$/ciner-dongbao-api/ciner-dongbao-cart-api/pom.xml" />
+        <option value="$PROJECT_DIR$/ciner-dongbao-api/ciner-dongbao-cms-api/pom.xml" />
+        <option value="$PROJECT_DIR$/ciner-dongbao-api/ciner-dongbao-dictionary-api/pom.xml" />
+        <option value="$PROJECT_DIR$/ciner-dongbao-api/ciner-dongbao-oms-api/pom.xml" />
+        <option value="$PROJECT_DIR$/ciner-dongbao-api/ciner-dongbao-pay-api/pom.xml" />
+        <option value="$PROJECT_DIR$/ciner-dongbao-api/ciner-dongbao-pms-api/pom.xml" />
+        <option value="$PROJECT_DIR$/ciner-dongbao-api/ciner-dongbao-sms-api/pom.xml" />
+        <option value="$PROJECT_DIR$/ciner-dongbao-application/ciner-dongbao-manager-web/pom.xml" />
+        <option value="$PROJECT_DIR$/ciner-dongbao-common/ciner-dongbao-common-base/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ciner-dongbao-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ciner-dongbao-api/ciner-dongbao-cart-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ciner-dongbao-api/ciner-dongbao-cms-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ciner-dongbao-api/ciner-dongbao-dictionary-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ciner-dongbao-api/ciner-dongbao-oms-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ciner-dongbao-api/ciner-dongbao-pay-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ciner-dongbao-api/ciner-dongbao-pms-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ciner-dongbao-api/ciner-dongbao-sms-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ciner-dongbao-api/ciner-dongbao-ums-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ciner-dongbao-application" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ciner-dongbao-application/ciner-dongbao-manager-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ciner-dongbao-application/ciner-dongbao-portal-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ciner-dongbao-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ciner-dongbao-common/ciner-dongbao-common-base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ciner-dongbao-common/ciner-dongbao-common-util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ciner-dongbao-generator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ciner-dongbao-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ciner-dongbao-service/ciner-dongbao-cart" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ciner-dongbao-service/ciner-dongbao-cms" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ciner-dongbao-service/ciner-dongbao-dictionary" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ciner-dongbao-service/ciner-dongbao-oms" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ciner-dongbao-service/ciner-dongbao-pay" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ciner-dongbao-service/ciner-dongbao-pms" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ciner-dongbao-service/ciner-dongbao-sms" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ciner-dongbao-service/ciner-dongbao-ums" charset="UTF-8" />
+  </component>
+</project>
