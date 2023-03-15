@@ -1,7 +1,7 @@
 package com.ciner.dongbao.ums.service;
 
-import com.ciner.dongbao.ums.entity.UmsMember;
-import com.baomidou.mybatisplus.extension.service.IService;
+import com.ciner.dongbao.ums.entity.dto.UmsMemberLoginParamDTO;
+import com.ciner.dongbao.ums.entity.dto.UmsMemberREgisterParamDTO;
 
 /**
  * <p>
@@ -11,6 +11,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author 王丽琦
  * @since 2023-03-14
  */
-public interface UmsMemberService extends IService<UmsMember> {
-    public String register();
+public interface UmsMemberService {
+    String register(UmsMemberREgisterParamDTO umsMemberREgisterParamDTO);
+    String login(UmsMemberLoginParamDTO umsMemberLoginParamDTO);
 }

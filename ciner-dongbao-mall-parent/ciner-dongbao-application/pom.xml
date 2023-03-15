@@ -17,4 +17,5 @@
         <module>ciner-dongbao-portal-web</module>
         <module>ciner-dongbao-manager-web</module>
     </modules>
+
 </project>

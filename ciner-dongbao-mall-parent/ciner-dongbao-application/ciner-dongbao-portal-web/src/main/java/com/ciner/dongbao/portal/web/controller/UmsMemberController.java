@@ -1,12 +1,13 @@
 package com.ciner.dongbao.portal.web.controller;
 
 
+import com.ciner.dongbao.ums.entity.dto.UmsMemberLoginParamDTO;
+import com.ciner.dongbao.ums.entity.dto.UmsMemberREgisterParamDTO;
 import com.ciner.dongbao.ums.service.UmsMemberService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
-import org.springframework.web.bind.annotation.RestController;
+import javax.validation.Valid;
 
 /**
  * <p>
@@ -28,11 +29,17 @@ public class UmsMemberController {
     }
 
 
-    @GetMapping("register")
-    public String register(){
+    @PostMapping("register")
+    public String register(@RequestBody @Valid UmsMemberREgisterParamDTO umsMemberREgisterParamDTO){
 
-        umsMemberService.register();
+        umsMemberService.register(umsMemberREgisterParamDTO);
         return "register";
+    }
+
+    @PostMapping("login")
+    public String login(@RequestBody UmsMemberLoginParamDTO umsMemberLoginParamDTO){
+
+        return umsMemberService.login(umsMemberLoginParamDTO);
     }
 }
 
