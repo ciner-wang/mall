@@ -1,5 +1,7 @@
 package com.ciner.dongbao.ums.service.impl;
 
+import com.ciner.dongbao.common.base.enums.StateCodeEnum;
+import com.ciner.dongbao.common.base.result.ResultWrapper;
 import com.ciner.dongbao.ums.entity.UmsMember;
 import com.ciner.dongbao.ums.entity.dto.UmsMemberLoginParamDTO;
 import com.ciner.dongbao.ums.entity.dto.UmsMemberREgisterParamDTO;
@@ -30,31 +32,36 @@ public class UmsMemberServiceImpl implements UmsMemberService {
     private PasswordEncoder passwordEncoder;
 
     @Override
-    public String register(UmsMemberREgisterParamDTO umsMemberREgisterParamDTO){
+    public ResultWrapper register(UmsMemberREgisterParamDTO umsMemberREgisterParamDTO){
         UmsMember u = new UmsMember();
         BeanUtils.copyProperties(umsMemberREgisterParamDTO, u);
 
-        String encode = passwordEncoder.encode(u.getPassword());
+        String encode = passwordEncoder.encode(umsMemberREgisterParamDTO.getPassword());
         u.setPassword(encode);
         umsMemberMapper.insert(u);
 
-        return "success";
+        return ResultWrapper.getSuccessBuilder().build();
     }
 
+
+
     @Override
-    public String login(UmsMemberLoginParamDTO umsMemberLoginParamDTO) {
+    public ResultWrapper login(UmsMemberLoginParamDTO umsMemberLoginParamDTO) {
 
 
         UmsMember umsMember = umsMemberMapper.selectByName(umsMemberLoginParamDTO.getUsername());
         if (null != umsMember){
             String passwordDb = umsMember.getPassword();
             if (!passwordEncoder.matches(umsMemberLoginParamDTO.getPassword(), passwordDb)){
-                return "密码不正确";
+                return ResultWrapper.getFailBuilder().code(StateCodeEnum.PASSWORD_ERROR.getCode()).msg(StateCodeEnum.PASSWORD_ERROR.getMsg()).build();
             }
         }else {
-            return "用户不存在";
+            return ResultWrapper.getFailBuilder().code(StateCodeEnum.USER_EMPTY.getCode()).msg(StateCodeEnum.USER_EMPTY.getMsg()).build();
         }
 
-        return "token";
+
+        return ResultWrapper.getSuccessBuilder().data("token").build();
+
     }
+
 }

@@ -1,5 +1,6 @@
 package com.ciner.dongbao.ums.service;
 
+import com.ciner.dongbao.common.base.result.ResultWrapper;
 import com.ciner.dongbao.ums.entity.dto.UmsMemberLoginParamDTO;
 import com.ciner.dongbao.ums.entity.dto.UmsMemberREgisterParamDTO;
 
@@ -12,6 +13,6 @@ import com.ciner.dongbao.ums.entity.dto.UmsMemberREgisterParamDTO;
  * @since 2023-03-14
  */
 public interface UmsMemberService {
-    String register(UmsMemberREgisterParamDTO umsMemberREgisterParamDTO);
-    String login(UmsMemberLoginParamDTO umsMemberLoginParamDTO);
+    ResultWrapper register(UmsMemberREgisterParamDTO umsMemberREgisterParamDTO);
+    ResultWrapper login(UmsMemberLoginParamDTO umsMemberLoginParamDTO);
 }

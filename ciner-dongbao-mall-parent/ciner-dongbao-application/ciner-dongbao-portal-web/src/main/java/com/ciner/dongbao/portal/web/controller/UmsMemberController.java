@@ -1,6 +1,7 @@
 package com.ciner.dongbao.portal.web.controller;
 
 
+import com.ciner.dongbao.common.base.result.ResultWrapper;
 import com.ciner.dongbao.ums.entity.dto.UmsMemberLoginParamDTO;
 import com.ciner.dongbao.ums.entity.dto.UmsMemberREgisterParamDTO;
 import com.ciner.dongbao.ums.service.UmsMemberService;
@@ -30,14 +31,16 @@ public class UmsMemberController {
 
 
     @PostMapping("register")
-    public String register(@RequestBody @Valid UmsMemberREgisterParamDTO umsMemberREgisterParamDTO){
+    public ResultWrapper register(@RequestBody @Valid UmsMemberREgisterParamDTO umsMemberREgisterParamDTO){
 
-        umsMemberService.register(umsMemberREgisterParamDTO);
-        return "register";
+        //int i = 1/0;
+        return umsMemberService.register(umsMemberREgisterParamDTO);
+
     }
 
     @PostMapping("login")
-    public String login(@RequestBody UmsMemberLoginParamDTO umsMemberLoginParamDTO){
+    public ResultWrapper login(@RequestBody UmsMemberLoginParamDTO umsMemberLoginParamDTO){
+
 
         return umsMemberService.login(umsMemberLoginParamDTO);
     }
