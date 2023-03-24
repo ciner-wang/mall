@@ -74,6 +74,12 @@
             <version>0.0.1-SNAPSHOT</version>
 
         </dependency>
+        <dependency>
+            <groupId>com.ciner</groupId>
+            <artifactId>ciner-dongbao-common-util</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
 
 
     </dependencies>

@@ -1,7 +1,11 @@
 package com.ciner.dongbao.portal.web.controller;
 
 
+import com.ciner.dongbao.common.base.annotations.TokenCheck;
 import com.ciner.dongbao.common.base.result.ResultWrapper;
+import com.ciner.dongbao.common.util.JwtUtil;
+import com.ciner.dongbao.portal.web.interceptor.AuthInterceptor;
+import com.ciner.dongbao.ums.entity.UmsMember;
 import com.ciner.dongbao.ums.entity.dto.UmsMemberLoginParamDTO;
 import com.ciner.dongbao.ums.entity.dto.UmsMemberREgisterParamDTO;
 import com.ciner.dongbao.ums.service.UmsMemberService;
@@ -30,7 +34,7 @@ public class UmsMemberController {
     }
 
 
-    @PostMapping("register")
+    @PostMapping("/register")
     public ResultWrapper register(@RequestBody @Valid UmsMemberREgisterParamDTO umsMemberREgisterParamDTO){
 
         //int i = 1/0;
@@ -38,11 +42,30 @@ public class UmsMemberController {
 
     }
 
-    @PostMapping("login")
+    @PostMapping("/login")
     public ResultWrapper login(@RequestBody UmsMemberLoginParamDTO umsMemberLoginParamDTO){
 
 
         return umsMemberService.login(umsMemberLoginParamDTO);
+    }
+
+    @PostMapping("/edit")
+    @TokenCheck
+    public ResultWrapper edit(@RequestBody UmsMember umsMember){
+
+        return umsMemberService.edit(umsMember);
+    }
+
+    /**
+     * 修改用户信息
+     * @param token
+     * @return
+     */
+    @GetMapping("/test-verify")
+    public String verify(String token){
+        String s = JwtUtil.parseToken(token);
+
+        return  s;
     }
 }
 

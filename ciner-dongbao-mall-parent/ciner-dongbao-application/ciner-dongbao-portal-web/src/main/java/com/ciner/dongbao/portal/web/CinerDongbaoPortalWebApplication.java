@@ -15,6 +15,7 @@ public class CinerDongbaoPortalWebApplication {
         SpringApplication.run(CinerDongbaoPortalWebApplication.class, args);
     }
 
+    //注册密码加密；加入容器
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();

@@ -1,4 +1,4 @@
-package com.ciner.cinerdongbaocommonutil;
+package com.ciner.dongbao.common.util;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

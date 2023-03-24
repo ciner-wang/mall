@@ -1,6 +1,7 @@
 package com.ciner.dongbao.ums.service;
 
 import com.ciner.dongbao.common.base.result.ResultWrapper;
+import com.ciner.dongbao.ums.entity.UmsMember;
 import com.ciner.dongbao.ums.entity.dto.UmsMemberLoginParamDTO;
 import com.ciner.dongbao.ums.entity.dto.UmsMemberREgisterParamDTO;
 
@@ -15,4 +16,5 @@ import com.ciner.dongbao.ums.entity.dto.UmsMemberREgisterParamDTO;
 public interface UmsMemberService {
     ResultWrapper register(UmsMemberREgisterParamDTO umsMemberREgisterParamDTO);
     ResultWrapper login(UmsMemberLoginParamDTO umsMemberLoginParamDTO);
+    ResultWrapper edit(UmsMember umsMember);
 }

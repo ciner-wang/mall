@@ -1,4 +1,4 @@
-package com.ciner.cinerdongbaocommonutil;
+package com.ciner.dongbao.common.util;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

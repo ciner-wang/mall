@@ -6,6 +6,10 @@ import lombok.Data;
 
 import java.io.Serializable;
 
+/**
+ * 统一返回值
+ * @param <T>
+ */
 @Data
 @Builder
 public class ResultWrapper<T> implements Serializable {
@@ -14,6 +18,7 @@ public class ResultWrapper<T> implements Serializable {
 
     //提示信息
     private String msg;
+
 
     private T data;
 
